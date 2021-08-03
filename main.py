@@ -16,7 +16,7 @@ def id_winner(computer, user):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        # Collect the user's choice from the form.
+        session['selection'] = 
         # Call the id_winner() function.
         # Update the win totals.
         # Format a message to display on the webpage.
